@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Abhishek Suthwal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Abhishek Suthwal</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#services">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="darkModeBtn" class="dark-btn">🌙 Dark Mode</button>
+    </nav>
+
+    <!-- Hero Section (Home) -->
+    <header id="home" class="hero">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Hello! I'm Abhishek Suthwal, a Computer Science Engineering Student.</p>
+        <a href="#about" class="btn">Learn More</a>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <p>My name is Abhishek Suthwal. I am pursuing B.Tech in Computer Science and Engineering at the Indian Institute of Information Technology Manipur.</p>
+        <p>I am passionate about programming, problem-solving, web development, and learning new technologies. I enjoy building projects and improving my technical skills.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="container alt-bg">
+        <h2>My Technical Skills</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Programming</h3>
+                <p>C, C++, Java, and Data Structures and Algorithms.</p>
+            </div>
+            <div class="service-card">
+                <h3>Web Development</h3>
+                <p>HTML, CSS, JavaScript, and responsive web design.</p>
+            </div>
+            <div class="service-card">
+                <h3>Backend Development</h3>
+                <p>Java, Spring Boot, REST APIs, and JWT Authentication.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container">
+        <h2>Contact Me</h2>
+        <p>Email: abhi240101086@iiitmanipur.ac.in</p>
+        <p>Phone: +91 XXXXXXXXXX</p>
+        <p>Feel free to contact me for collaboration, projects, or professional opportunities.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Abhishek Suthwal. All Rights Reserved.</p>
+    </footer>
+    <script>
+    const darkModeBtn = document.getElementById("darkModeBtn");
+
+    darkModeBtn.addEventListener("click", function() {
+        document.body.classList.toggle("dark-mode");
+
+        if (document.body.classList.contains("dark-mode")) {
+            darkModeBtn.innerHTML = "☀️ Light Mode";
+        } else {
+            darkModeBtn.innerHTML = "🌙 Dark Mode";
+        }
+    });
+</script>
+</body>
+</html>
